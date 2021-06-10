@@ -1,3 +1,4 @@
 .homeContainer{
     background-color: grey;
+    place-items: center;
 }

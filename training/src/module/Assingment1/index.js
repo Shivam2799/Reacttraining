@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React,{Component} from "react";
 import "./index.css";
 import image from "./logo.png"
 class Assingment1 extends Component{
@@ -22,7 +22,7 @@ class Assingment1 extends Component{
                             with the Lite version for free<br></br>
                         </pre>
                     </div>
-                    <img src={image} className={"logo"}></img>
+                    <img src={image}  className={"logo"}></img>
                 </div>
                 <div className={"Plan"}>
                     <p>Start now<br></br>your <span>free plan.</span></p>
