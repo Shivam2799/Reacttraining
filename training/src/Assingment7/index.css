@@ -1,0 +1,40 @@
+.mainContainer{
+    background:skyblue;
+    width:100%;
+    min-height: 100vh;
+}
+.innerContainer{
+    display: inline-block;
+    background:white;
+    width:40%;
+    height:400px;
+    margin: 130px 450px;
+    border-radius: 12px;
+}
+.form{
+    display:inline-block;
+    margin:80px  50px;
+}
+.label{
+    font-size: 25px;
+    font-weight: bolder;
+    color:brown;
+    
+}
+.input{
+    width:500px;
+    height:40px;
+    margin:15px 0px 0px 0px;
+    border-radius: 8px;
+}
+.submit{
+    width:400px;
+    height:40px;
+    margin:100px 0px 0px 45px;
+    border-radius:12px;
+    background-color: rgb(46, 223, 46);
+    font-size: 15px;
+    font-weight: bolder;
+    border-color:rgb(46, 223, 46) ;
+    cursor: pointer;
+}
