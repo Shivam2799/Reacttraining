@@ -1,10 +1,10 @@
 import React from 'react';
-import Assingment1 from "./module/Assingment1";
+import Assingment6 from "./Assingment6";
 class App extends React.Component{
   render(){
     return(
       <div>
-      {<Assingment1 />}
+      {<Assingment6 />}
       </div>
     );
   }
