@@ -1,10 +1,15 @@
 import React from 'react';
-import Assingment6 from "./Assingment6";
+import Login from './module/Assingment9/component/Login';
+import Product from './module/Assingment9/component/Product';
+
+import { Route, Switch } from 'react-router-dom';
+import Assingment9 from './module/Assingment9';
 class App extends React.Component{
   render(){
     return(
       <div>
-      {<Assingment6 />}
+       
+      <Assingment9 />
       </div>
     );
   }
