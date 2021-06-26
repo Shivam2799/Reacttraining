@@ -18,19 +18,46 @@ export default App;
 // git add . 
 // git commit -m "naming conventions ex. added home component"
 // git push -u origin <branch-Name>*/
-import React from "react";
-import { Provider } from "react-redux";
-import store from "./module/Assignment11/store";
-
-import screens from "./module/Assingment11/screens";
-
-
-const App = () => {
+import React from 'react'
+import './App.css'
+import {useSelector,useDispatch } from "react-redux";
+import {incNumber,decNumber,getUserData} from './actions/index';
+const App=()=>{
+  const {userData}=useSelector((state=>state.changeTheNumber))
+  
+  const dispatch=useDispatch();
   return (
-    <Provider store={store}>
-      <screens />
-    </Provider>
-  );
-};
+    <>
+    
+    <div className="quantity">
+    
+      <button onClick={()=>{
+            dispatch(getUserData())
+        }}>userData</button>
+    </div>
+    <table id="customers">
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>YEAR</th>
+  </tr>
 
-export default App;
+  {userData.length &&
+  userData.map((user)=>{
+    return(
+      <tr>
+    <td>{user.id}</td>
+    <td>{user.name}</td>
+    <td>{user.year}</td>
+  </tr>
+    )
+
+  })}
+ 
+</table>
+
+    </>
+  )
+}
+
+export default App;;
