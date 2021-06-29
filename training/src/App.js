@@ -17,7 +17,7 @@ class App extends React.Component{
 export default App;
 // git add . 
 // git commit -m "naming conventions ex. added home component"
-// git push -u origin <branch-Name>*/
+// git push -u origin <branch-Name>
 import React from 'react'
 import './App.css'
 import {useSelector,useDispatch } from "react-redux";
@@ -60,4 +60,16 @@ const App=()=>{
   )
 }
 
-export default App;;
+export default App;*/
+import React from "react";
+import "./App.css";
+import Assingment12 from "./module/Assingment12";
+class App extends React.Component {
+  render() {
+    return (
+      <div className={`App`}></div>
+      );
+    }
+  }
+  
+  export default App;
