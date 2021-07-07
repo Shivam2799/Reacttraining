@@ -1,5 +1,5 @@
   
-import { data } from "./data";
+import { data } from ".collection/data";
 
 export const initialState = {};
 

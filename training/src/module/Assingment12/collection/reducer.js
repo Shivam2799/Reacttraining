@@ -1,5 +1,5 @@
 import { dataInitialState, themeInitialState } from "./initialStates";
-import { data } from "./data";
+import { data } from ".collection/data";
 
 export const dataReducer = (state = dataInitialState, action) => {
   const { type, payload } = action;

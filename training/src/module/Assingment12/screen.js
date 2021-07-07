@@ -1,7 +1,7 @@
 import { Box, Button, Switch, Typography } from "@material-ui/core";
 import React from "react";
 import Card from "./pages";
-import { useStore } from "../collection/context";
+import { useStore } from "./collection/context";
 
 export default function Home() {
   const store = useStore();

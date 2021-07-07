@@ -1,15 +1,31 @@
-/*import React from 'react';
-import Login from './module/Assingment9/component/Login';
-import Product from './module/Assingment9/component/Product';
+import React from "react";
 
-import { Route, Switch } from 'react-router-dom';
-import Assingment10 from './module/Assingment10';
+import Header from './module/RoutingAssignment/Header';
+import Detail from "./module/RoutingAssignment/Detail";
+import Footer from "./module/RoutingAssignment/Footer";
+import Login from "./module/Assingment9/component/Login";
+import Product from "./module/Assingment9/component/Product";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+
 class App extends React.Component{
   render(){
     return(
       <div>
+        <Router>
+        <Switch>
+          
+        <Route exact path="/" component={Login} />
+          <Route exact path="/dashboard" component={Product} />
+           <Route exact path="/product/:id" component={Detail} />
+           
+        </Switch>
+      </Router>
        
-      <Assingment10 />
+      <Header />
+      <Detail />
+      <Footer />
+      <Login />
       </div>
     );
   }
@@ -18,7 +34,7 @@ export default App;
 // git add . 
 // git commit -m "naming conventions ex. added home component"
 // git push -u origin <branch-Name>
-import React from 'react'
+/*import React from 'react'
 import './App.css'
 import {useSelector,useDispatch } from "react-redux";
 import {incNumber,decNumber,getUserData} from './actions/index';
@@ -60,7 +76,7 @@ const App=()=>{
   )
 }
 
-export default App;*/
+export default App;
 import React from "react";
 import "./App.css";
 import Assingment12 from "./module/Assingment12";
@@ -72,4 +88,4 @@ class App extends React.Component {
     }
   }
   
-  export default App;
+  export default App;*/
